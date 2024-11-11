@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.homepage                  = 'https://github.com/aporat/AlamofireSwiftSoup'
   s.license                   = 'MIT'
   s.author                    = { 'Adar Porat' => 'http://github.com/aporat' }
-  s.platform                  = :ios, '12.0'
-  s.ios.deployment_target     = '12.0'
+  s.platform                  = :ios, '15.0'
+  s.ios.deployment_target     = '15.0'
   s.requires_arc              = true
   s.source                    = { :git => 'https://github.com/aporat/AlamofireSwiftSoup.git', :tag => s.version.to_s }
   s.source_files              = 'AlamofireSwiftSoup/*.{swift}'
