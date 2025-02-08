@@ -1,0 +1,24 @@
+{
+  "originHash" : "ea816fda845eb9875cc9b18b616fce91ee7ffb45e7e3d2592e8a8feedb9050f9",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup",
+      "state" : {
+        "revision" : "0837db354faf9c9deb710dc597046edaadf5360f",
+        "version" : "2.7.6"
+      }
+    }
+  ],
+  "version" : 3
+}

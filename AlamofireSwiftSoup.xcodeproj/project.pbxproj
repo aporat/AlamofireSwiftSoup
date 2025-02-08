@@ -10,6 +10,7 @@
 		537EDD0E24F49F1E003DC54A /* AlamofireSwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537EDD0424F49F1E003DC54A /* AlamofireSwiftSoup.framework */; };
 		53E9173324FDF0E900704C28 /* AlamofireSwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E9173224FDF0E900704C28 /* AlamofireSwiftSoup.swift */; };
 		53E9173524FDF71A00704C28 /* AlamofireSwiftSoupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E9173424FDF71A00704C28 /* AlamofireSwiftSoupTests.swift */; };
+		773F35742D57F4790015A90D /* AlamofireSwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E9173224FDF0E900704C28 /* AlamofireSwiftSoup.swift */; };
 		77AA4B382D23076700275EEB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 77AA4B372D23076700275EEB /* SwiftSoup */; };
 		77AA4B3B2D23077200275EEB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 77AA4B3A2D23077200275EEB /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		537EDD1424F49F1E003DC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E9173224FDF0E900704C28 /* AlamofireSwiftSoup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireSwiftSoup.swift; sourceTree = "<group>"; };
 		53E9173424FDF71A00704C28 /* AlamofireSwiftSoupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireSwiftSoupTests.swift; sourceTree = "<group>"; };
+		773F35752D57F6160015A90D /* AlamofireSwiftSoup.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlamofireSwiftSoup.xctestplan; path = ../AlamofireSwiftSoup.xctestplan; sourceTree = "<group>"; };
 		77AA4B3C2D2307AA00275EEB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 		537EDCFA24F49F1E003DC54A = {
 			isa = PBXGroup;
 			children = (
+				773F35752D57F6160015A90D /* AlamofireSwiftSoup.xctestplan */,
 				77AA4B3C2D2307AA00275EEB /* Package.swift */,
 				535D10AE24F4A21400E3006D /* AlamofireSwiftSoup */,
 				537EDD1124F49F1E003DC54A /* AlamofireSwiftSoupTests */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E9173524FDF71A00704C28 /* AlamofireSwiftSoupTests.swift in Sources */,
+				773F35742D57F4790015A90D /* AlamofireSwiftSoup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlamofireSwiftSoupTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -437,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlamofireSwiftSoupTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
