@@ -5,7 +5,6 @@ A lightweight extension that combines [Alamofire](https://github.com/Alamofire/A
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Faporat%2FAlamofireSwiftSoup%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/aporat/AlamofireSwiftSoup)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Faporat%2FAlamofireSwiftSoup%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/aporat/AlamofireSwiftSoup)
 ![GitHub Actions Workflow Status](https://github.com/aporat/AlamofireSwiftSoup/actions/workflows/ci.yml/badge.svg)
-
 [![codecov](https://codecov.io/gh/aporat/AlamofireSwiftyJSON/graph/badge.svg?token=YYQOZL6W2K)](https://codecov.io/gh/aporat/AlamofireSwiftyJSON)
 ---
 
