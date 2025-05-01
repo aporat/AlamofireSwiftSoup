@@ -1,10 +1,10 @@
 # AlamofireSwiftSoup
 
-[![Build Status](https://github.com/aporat/AlamofireSwiftSoup/workflows/Tests/badge.svg)](https://github.com/aporat/AlamofireSwiftSoup/actions)
-[![Cocoapods](https://img.shields.io/cocoapods/v/AlamofireSwiftSoup.svg)](https://cocoapods.org/pods/AlamofireSwiftSoup)
-[![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
-[![Xcode](https://img.shields.io/badge/Xcode-11.4-blue.svg)](https://developer.apple.com/xcode)
-[![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Faporat%2FAlamofireSwiftSoup%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/aporat/AlamofireSwiftSoup)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Faporat%2FAlamofireSwiftSoup%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/aporat/AlamofireSwiftSoup)
+![GitHub Actions Workflow Status](https://github.com/aporat/AlamofireSwiftSoup/actions/workflows/ci.yml/badge.svg)
+
+[![codecov](https://codecov.io/gh/aporat/AlamofireSwiftyJSON/graph/badge.svg?token=YYQOZL6W2K)](https://codecov.io/gh/aporat/AlamofireSwiftyJSON)
 
 ## Installation
 
