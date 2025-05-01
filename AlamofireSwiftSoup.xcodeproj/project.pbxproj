@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,7 +33,6 @@
 		537EDD1424F49F1E003DC54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E9173224FDF0E900704C28 /* AlamofireSwiftSoup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireSwiftSoup.swift; sourceTree = "<group>"; };
 		53E9173424FDF71A00704C28 /* AlamofireSwiftSoupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireSwiftSoupTests.swift; sourceTree = "<group>"; };
-		773F35752D57F6160015A90D /* AlamofireSwiftSoup.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = AlamofireSwiftSoup.xctestplan; path = ../AlamofireSwiftSoup.xctestplan; sourceTree = "<group>"; };
 		77AA4B3C2D2307AA00275EEB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +70,6 @@
 		537EDCFA24F49F1E003DC54A = {
 			isa = PBXGroup;
 			children = (
-				773F35752D57F6160015A90D /* AlamofireSwiftSoup.xctestplan */,
 				77AA4B3C2D2307AA00275EEB /* Package.swift */,
 				535D10AE24F4A21400E3006D /* AlamofireSwiftSoup */,
 				537EDD1124F49F1E003DC54A /* AlamofireSwiftSoupTests */,
@@ -155,7 +153,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1620;
-				ORGANIZATIONNAME = "Adar Porat";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					537EDD0324F49F1E003DC54A = {
 						CreatedOnToolsVersion = 11.6;
@@ -168,7 +166,7 @@
 				};
 			};
 			buildConfigurationList = 537EDCFE24F49F1E003DC54A /* Build configuration list for PBXProject "AlamofireSwiftSoup" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
