@@ -17,12 +17,6 @@ jobs:
           - platform: iOS Simulator
             device: iPhone 16 Pro
             os: "18.6"
-          - platform: tvOS Simulator
-            device: Apple TV
-            os: "18.5"
-          - platform: watchOS Simulator
-            device: Apple Watch Ultra 2 (49mm)
-            os: "11.5"
           - platform: macOS
             device: Mac
             os: "15.6"
