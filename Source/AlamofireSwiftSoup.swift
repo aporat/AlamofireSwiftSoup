@@ -2,21 +2,14 @@ import Alamofire
 import Foundation
 import SwiftSoup
 
-public final class SwiftSoupHTMLResponseSerializer: ResponseSerializer {
+extension Document: @retroactive @unchecked Sendable {}
+
+public final class SwiftSoupHTMLResponseSerializer: ResponseSerializer, Sendable {
     public let dataPreprocessor: DataPreprocessor
     public let emptyResponseCodes: Set<Int>
     public let emptyRequestMethods: Set<HTTPMethod>
-    /// Optional string encoding used to validate the response.
     public let encoding: String.Encoding?
 
-    /// Creates an instance with the provided values.
-    ///
-    /// - Parameters:
-    ///   - dataPreprocessor:    `DataPreprocessor` used to prepare the received `Data` for serialization.
-    ///   - encoding:            A string encoding. Defaults to `nil`, in which case the encoding will be determined
-    ///                          from the server response, falling back to the default HTTP character set, `ISO-8859-1`.
-    ///   - emptyResponseCodes:  The HTTP response codes for which empty responses are allowed. `[204, 205]` by default.
-    ///   - emptyRequestMethods: The HTTP request methods for which empty responses are allowed. `[.head]` by default.
     public init(dataPreprocessor: DataPreprocessor = SwiftSoupHTMLResponseSerializer.defaultDataPreprocessor,
                 encoding: String.Encoding? = nil,
                 emptyResponseCodes: Set<Int> = SwiftSoupHTMLResponseSerializer.defaultEmptyResponseCodes,
@@ -64,22 +57,17 @@ public final class SwiftSoupHTMLResponseSerializer: ResponseSerializer {
 }
 
 extension DataRequest {
-    /// Adds a handler to be called once the request has finished.
-    ///
-    /// - Parameters:
-    ///   - queue:             The queue on which the completion handler is dispatched. `.main` by default.
-    ///   - encoding:            A string encoding. Defaults to `nil`, in which case the encoding will be determined
-    ///                          from the server response, falling back to the default HTTP character set, `ISO-8859-1`.
-    ///   - completionHandler: A closure to be executed once the request has finished.
-    ///
-    /// - Returns:             The request.
     @discardableResult
     public func responseSwiftSoupHTML(queue: DispatchQueue = .main,
                                       encoding: String.Encoding? = nil,
-                                      completionHandler: @escaping (AFDataResponse<Document>) -> Void) -> Self
+                                      completionHandler: @escaping @Sendable (AFDataResponse<Document>) -> Void) -> Self
     {
         response(queue: queue,
                  responseSerializer: SwiftSoupHTMLResponseSerializer(encoding: encoding),
                  completionHandler: completionHandler)
+    }
+
+    public func serializingSwiftSoupHTML(encoding: String.Encoding? = nil) -> DataTask<Document> {
+        serializingResponse(using: SwiftSoupHTMLResponseSerializer(encoding: encoding))
     }
 }
